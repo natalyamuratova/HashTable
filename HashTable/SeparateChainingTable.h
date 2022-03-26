@@ -1,10 +1,8 @@
-#pragma once
-
-#include <iostream>
 #include <vector>
 #include <list>
-#include <algorithm>
 #include "HashTable.h"
+
+#pragma once
 
 using namespace std;
 

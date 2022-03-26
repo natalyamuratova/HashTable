@@ -1,3 +1,5 @@
+#include <iostream>
+#include <algorithm>
 #include "SeparateChainingTable.h"
 
 SeparateChainingTable::SeparateChainingTable(int tableSize) {
@@ -17,7 +19,7 @@ SeparateChainingTable::SeparateChainingTable(const SeparateChainingTable& table)
 }
 
 int SeparateChainingTable::hash(TKey key) {
-	return key % 29 % capacity;
+	return key % capacity;
 }
 
 void SeparateChainingTable::insert(TKey key, TValue value) {
